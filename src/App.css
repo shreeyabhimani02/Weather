@@ -426,3 +426,69 @@ button:hover {
     height: 70px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .weather-layout {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .history-panel {
+    width: 100%;
+    min-height: auto;
+    order: 2;  
+  }
+
+  .weather-main {
+    width: 100%;
+    order: 1;
+  }
+
+  .search-row {
+    flex-direction: column;
+  }
+  .search-input,
+  .search-btn {
+    width: 100%;
+  }
+
+  .weather-card {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .temp {
+    font-size: 2rem;
+  }
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .forecast {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .forecast {
+    grid-template-columns: 1fr; 
+  }
+
+  .history-item {
+    padding: 8px;
+  }
+
+  .forecast-day img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .temp {
+    font-size: 1.6rem;
+  }
+}
